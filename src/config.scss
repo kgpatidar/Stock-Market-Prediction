@@ -1,0 +1,93 @@
+// Font Family
+@import url("https://fonts.googleapis.com/css2?family=Monda:wght@700&display=swap");
+
+// Threshold Point
+$phone: 600px;
+$tablet: 900px;
+$desktop: 1200px;
+
+// Color
+$primary: #0481bb;
+$primarylight: #25cdf79d;
+$secondary: #e69455;
+$white: #f0fff0;
+$black: #000000;
+$gray: #696969;
+
+// Universal
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+// Typography
+body {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.3em;
+  word-wrap: break-word;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1em;
+  color: $black;
+}
+
+p {
+  line-height: 1.3em;
+  color: $black;
+}
+
+body {
+  font-size: 1.2em;
+}
+
+@media screen and (min-width: $phone) {
+  body {
+    font-size: 1.4em;
+  }
+}
+@media screen and (min-width: $tablet) {
+  body {
+    font-size: 1.6em;
+  }
+}
+@media screen and (min-width: 1400px) {
+  body {
+    font-size: 1.8em;
+  }
+}
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.6em;
+}
+
+h5 {
+  font-size: 1.6em;
+}
+
+h6 {
+  font-size: 0.5em;
+}
+
+p {
+  font-size: 0.7em;
+}
