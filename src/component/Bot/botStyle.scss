@@ -1,0 +1,15 @@
+.botcot {
+  display: flex;
+  margin-top: 35px;
+  z-index: 100;
+
+  .botsup {
+    width: 100%;
+    padding-left: 20%;
+    align-self: center;
+    //   background-color: chartreuse;
+    .botsvg {
+      width: 50%;
+    }
+  }
+}

@@ -1,0 +1,189 @@
+.navbar {
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+
+  .brandname {
+    font-weight: bolder;
+    font-family: "Monda", sans-serif;
+    cursor: pointer;
+    &:hover {
+      color: #ff7800;
+      transition: 0.3s linear;
+    }
+  }
+
+  .applink {
+    display: flex;
+    align-self: center;
+
+    h6 {
+      font-family: "Monda", sans-serif;
+      margin-left: 30px;
+      cursor: pointer;
+      a {
+        outline-style: none;
+        border-style: none;
+        text-decoration: none;
+      }
+      &:hover {
+        color: #ff7800;
+        transition: 0.3s ease-in;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.landing {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 80vh;
+  .firstpart {
+    padding-left: 100px;
+    align-items: center;
+    flex-direction: row;
+    width: 20%;
+    justify-content: center;
+    align-self: center;
+
+    h4 {
+      width: 190px;
+      color: rgb(78, 61, 61);
+      font-size: 32px;
+      font-weight: bolder;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      word-break: 10px;
+      @media (max-width: 920px) {
+        font-size: 25px;
+      }
+    }
+
+    .getstart {
+      background-color: #ff7800;
+      color: #fff;
+      outline: none;
+      border: 0;
+      font-size: 20px;
+      padding-left: 27px;
+      padding-right: 27px;
+      padding-top: 10px;
+      text-decoration: none;
+      padding-bottom: 10px;
+      border-radius: 20px;
+      cursor: pointer;
+      &:hover {
+        border: 1px solid #ff7800;
+        background-color: #edf7f4;
+        color: #ff7800;
+        transition: 0.3s linear;
+      }
+      @media (max-width: 920px) {
+        font-size: 13px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+      }
+    }
+  }
+
+  .secondpart {
+    width: 60%;
+    .artimage {
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  @media (max-width: 640px) {
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    .firstpart {
+      margin-top: 100px;
+      flex-direction: row;
+      width: 100%;
+      height: 100%;
+      h4 {
+        width: 100%;
+        @media (max-width: 920px) {
+          font-size: 25px;
+        }
+      }
+
+      .getstart {
+        background-color: #ff7800;
+        color: #fff;
+        outline: none;
+        border: 0;
+        font-size: 20px;
+        padding-left: 27px;
+        padding-right: 27px;
+        padding-top: 10px;
+        text-decoration: none;
+        padding-bottom: 10px;
+        border-radius: 20px;
+      }
+    }
+
+    .secondpart {
+      width: 100%;
+      .artimage {
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+.floatbutton {
+  background-color: #fff;
+  width: 60px;
+  text-align: center;
+  height: 60px;
+  border-radius: 60px;
+  position: fixed;
+  left: 90%;
+  z-index: 10000;
+  bottom: 4%;
+  box-shadow: 2px 4px 15px #000;
+  cursor: pointer;
+  padding: 6px;
+  animation: mymove 1s infinite linear;
+  .msgbotimg {
+    height: 60px;
+    width: 60px;
+  }
+  &:hover {
+    transition: 0.2s linear;
+    background-color: #ff7800;
+    padding: 6px;
+    transform: scale(0.9);
+  }
+  @media (max-width: 640px) {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    // padding: ;
+    .msgbotimg {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+
+@keyframes mymove {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
